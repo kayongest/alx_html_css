@@ -31,11 +31,12 @@ aside {
 /* Basic styling for other elements */
 header {
     padding: 20px;
-    background: #f0f0f0;
+    background: #344765;
     border-bottom: 1px solid #ddd;
 }
 
 header ul {
+    color: #fff;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -45,7 +46,8 @@ header ul {
 
 footer {
     padding: 20px;
-    background: #f0f0f0;
+    background: #344765;
+    color: #fff;
     border-top: 1px solid #ddd;
     text-align: center;
 }
