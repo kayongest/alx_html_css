@@ -1,0 +1,193 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #071629;
+}
+
+header {
+    background-color: #ffffff00;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ===== HERO SECTION (GET SCHOOLED + LEARN FROM PROS) ===== */
+/* Apply the same background to both sections */
+main>section:nth-child(1) {
+    background: linear-gradient(rgba(139, 144, 158, 0), rgba(16, 27, 44, 0.9)), url('images/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8rem 5% 4rem;
+    color: white;
+    text-align: center;
+}
+
+main>section:nth-child(1) h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+main>section:nth-child(1) span {
+    display: inline;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+main>section:nth-child(1) button {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+main>section:nth-child(1) button:hover {
+    background: #9C4DF4;
+}
+
+/* "Learn from the Pros" section (inside the first section) */
+/* Target the first div inside the section */
+section>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center all children horizontally */
+    text-align: center;
+    /* Center text (for spans) */
+}
+
+/* Style the h1 */
+section>div:first-child h1 {
+    font-size: 6.8rem;
+    margin-bottom: 0.5rem;
+    /* Space below h1 */
+    padding-top: 4rem;
+}
+
+/* Container for spans (horizontal alignment) */
+section>div:first-child .span-container {
+    display: flex;
+    gap: 47px;
+    /* Exact 47px spacing between spans */
+    margin-bottom: 0;
+    /* Reset to 0 (button will follow immediately) */
+    padding-bottom: 10em;
+    /* Space *below* spans (pushes button down) */
+}
+
+/* Button styling (positioned right after spans) */
+section>div:first-child button {
+    margin-top: -8em;
+    /* Pulls button up into the padding space */
+    padding: 0.8rem 2rem;
+    background: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    /* Ensures proper stacking */
+}
+
+.image_pros {
+    padding-top: 5rem;
+}
+
+/* Teachers grid */
+/* Target the testimonial section (2nd section in main) */
+main>section:nth-child(2) {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    padding: 0 5%;
+    /* 10% padding on left and right */
+    /* max-width: 1200px; */
+    /* Optional: Set a max-width */
+    margin: 0 auto;
+    /* Center the entire section */
+}
+
+/* Image container */
+main>section:nth-child(2)>div:first-child {
+    flex: 2;
+    /* Take up available space */
+    padding-right: 2rem;
+    /* Space between image and text */
+}
+
+/* Text container */
+main>section:nth-child(2)>div:nth-child(2) {
+    flex: 5;
+    /* Take up available space */
+    padding-left: 2rem;
+    /* Space between image and text */
+}
+
+
+main>section:nth-child(1)>div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+}
+
+main>section:nth-child(1)>div:nth-child(2)>div>div {
+    max-width: 150px;
+}
+
+main>section:nth-child(1)>div:nth-child(2) img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+

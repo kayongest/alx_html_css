@@ -1,0 +1,88 @@
+/* Shared background container */
+.shared-background-container {
+  background: linear-gradient(rgba(139, 144, 158, 0), rgba(21, 55, 106, 0.9)),
+              url('images/Object.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--pure-white);
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+
+
+main > section:nth-child(1) > div:nth-child(2) h2
+
+
+/* Learn from Pros Section */
+.learn-pros-section {
+  padding: 80px 0;
+}
+
+.learn-pros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Pros Grid Styling (keep your existing styles) */
+.pros-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.pro-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.pro-card:hover {
+  transform: translateY(-5px);
+}
+
+.pro-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--pure-white);
+}
+
+/* Button Styling */
+.hero-btn {
+  background: var(--pure-white);
+  color: var(--primary-blue);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
