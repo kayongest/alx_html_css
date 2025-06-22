@@ -1,3 +1,109 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Logo Styles */
+.logo-2 {
+  z-index: 1001; /* Ensure logo stays above menu */
+}
+
+/* Hamburger Button Styles */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #071629;
+  transition: all 0.3s ease;
+}
+
+/* Menu Styles */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-item {
+  font-family: "Source Sans Pro", Helvetica;
+  font-weight: 700;
+  color: #071629;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #ff6565;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+  
+  /* Hide regular menu on mobile */
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Menu when active */
+  .menu.active {
+    right: 0;
+  }
+  
+  /* Hamburger to X transformation */
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Menu items */
+  .menu-item {
+    font-size: 18px;
+    color: #071629;
+    padding: 10px;
+  }
+}
+
+
 .element-headphones {
     background-color: #ffffff;
     width: 100%;

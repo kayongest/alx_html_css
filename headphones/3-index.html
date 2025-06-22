@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <!-- Essential viewport meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="3-styles.css" />
+  </head>
+  <body>
+    <div class="element-headphones" data-model-id="0:2">
+      <div class="div">
+        
+        <!-- Contact Us Section -->
+        <div class="part-contact-us">
+          <div class="text-wrapper-2">Contact us</div>
+          <div class="input">
+            <input class="div-2" placeholder="Name" type="text" />
+            <div class="rectangle"></div>
+          </div>
+          <div class="input-2">
+            <input class="div-2" placeholder="Email" type="email" />
+            <div class="rectangle"></div>
+          </div>
+          <div class="input-3">
+            <input class="div-2" placeholder="Your message" type="number" />
+            <div class="rectangle"></div>
+          </div>
+          <button class="button">
+            <div class="div-wrapper">
+              <div class="text-wrapper-3">CALL TO ACTION</div>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.querySelector(".menu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

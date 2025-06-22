@@ -5,3 +5,78 @@
     top: 910px;
     left: 382px;
 }
+
+/* Continuous animation for the "What we do..." icons */
+.element-headphones .ic,
+.element-headphones .ic-2,
+.element-headphones .ic-3,
+.element-headphones .ic-4 {
+  transition: all 0.3s ease;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Hover effects */
+.element-headphones .ic:hover,
+.element-headphones .ic-2:hover,
+.element-headphones .ic-3:hover,
+.element-headphones .ic-4:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 5px 15px rgba(255, 101, 101, 0.4));
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Icon specific animations */
+.element-headphones .sound-frecuency,
+.element-headphones .video,
+.element-headphones .music,
+.element-headphones .hearing {
+  transition: all 0.4s ease;
+}
+
+.element-headphones .sound-frecuency:hover {
+  animation: pulse 1.5s infinite;
+}
+
+.element-headphones .video:hover {
+  animation: shake 0.5s infinite;
+}
+
+.element-headphones .music:hover {
+  animation: spin 2s linear infinite;
+}
+
+.element-headphones .hearing:hover {
+  animation: bounce 0.8s infinite;
+}
+
+/* Animation keyframes */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

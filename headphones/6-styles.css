@@ -1,0 +1,77 @@
+/* Results Section */
+.part-dark {
+  background-color: #071629;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+.results-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.our-results-speak-fo {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.lorem-ipsum-dolor-si {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Pentagon Container */
+.pentagons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Pentagon Shape */
+.pentagon {
+  position: relative;
+  width: 180px;
+  height: 170px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background: linear-gradient(to bottom, #FF6565, #FF6565);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pentagon-content {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.percentage {
+  display: block;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pentagons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pentagon {
+    margin-bottom: 30px;
+  }
+}
