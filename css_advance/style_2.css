@@ -1,0 +1,225 @@
+/* ===== TUTORIALS SECTION ===== */
+/* ===== FREE MEMBERSHIP SECTION ===== */
+main > section:nth-child(4) {
+  padding: 5rem 10%;
+  text-align: center;
+  background-color: #071629; /* Dark background */
+  color: white;
+}
+
+main > section:nth-child(4) h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+/* Benefits grid container */
+main > section:nth-child(4) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+/* Individual benefit card */
+main > section:nth-child(4) > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease;
+}
+
+main > section:nth-child(4) > div > div:hover {
+  transform: translateY(-10px);
+}
+
+/* Benefit icon */
+main > section:nth-child(4) > div > div > img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1.5rem;
+  filter: brightness(0) invert(1); /* Make white icons */
+}
+
+/* Benefit title */
+main > section:nth-child(4) > div > div > h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Benefit description */
+main > section:nth-child(4) > div > div > p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 220px;
+}
+
+/* Register button */
+main > section:nth-child(4) > button {
+  background: #C271FF;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+main > section:nth-child(4) > button:hover {
+  background: #9C4DF4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(194, 113, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main > section:nth-child(4) {
+    padding: 4rem 5%;
+  }
+  
+  main > section:nth-child(4) > div {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+  }
+  
+  main > section:nth-child(4) > div > div {
+    padding: 1.5rem 0;
+  }
+}
+
+
+/* ===== MEMBERSHIP SECTION ===== */
+main>section:nth-child(4) {
+    background: #071629;
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+main>section:nth-child(4) h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main>section:nth-child(4)>div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+main>section:nth-child(4) img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ===== FAQ SECTION ===== */
+main>section:nth-child(5) {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+main>section:nth-child(5) h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main>section:nth-child(5)>div {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    text-align: left;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #071629;
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+footer .fa-brands {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: white;
+}
+
+
+/* ===== TESTIMONIAL SECTION ===== */
+main>section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10%;
+    background: #C271FF;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+main>section:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/testimonial-bg.png') center/cover no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+main>section:nth-child(2)>div:first-child {
+    position: relative;
+    z-index: 1;
+    margin-right: 4rem;
+}
+
+main>section:nth-child(2) img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.3);
+    object-fit: cover;
+}
+
+main>section:nth-child(2)>div:nth-child(2) {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+main>section:nth-child(2) blockquote {
+    font-size: 1.75rem;
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+main>section:nth-child(2) h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+main>section:nth-child(2) p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
